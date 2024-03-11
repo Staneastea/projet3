@@ -1,0 +1,554 @@
+
+/* Homepage*/
+
+body{
+    max-width: 425px;
+    width: 100%;
+    margin: 0px;
+    background-color: #FFFFFF;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.loader-wrapper {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    top: 0;
+    left: 0;
+    z-index: -20;
+    animation: fadeout ease 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeout {
+    0% {
+    opacity: 1;
+    z-index: 20;
+    }
+    95% {
+    opacity: 1;
+    z-index: 20;
+    }
+    100% {
+    opacity: 0;
+    z-index: -20;
+    }
+    
+}
+
+.loader {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border-top: 4px solid #353535;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+.loader::after {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border-bottom: 4px solid #FF3D00;
+    border-left: 4px solid transparent;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Header*/
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 63px;
+}
+
+.location{
+    display: flex;
+    justify-content: center;
+    background-color: #EAEAEA;
+    height: 50px;
+}
+
+#logo{
+    width: 162px;
+    height: 30px;
+}
+
+.nav-icon{
+    width: 12px;
+    padding-right: 17px;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    padding: 25px 49px 25px 49px;
+    text-align: center;
+    background: #f7f7f7;
+}
+
+h1{
+    font-size: 24px;
+    margin-top: 0px;
+}
+
+.p-header{
+    padding-left: 34px; 
+    padding-right: 26px;
+    font-size: 18px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    background: #f7f7f7;
+}
+
+.btn{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    background : linear-gradient(#FF79DA,#9356DC);
+    border-radius: 10rem;
+    font-size: 16px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition-property: transform;
+    transition-duration: 400ms;
+    width: 186px;
+    height: 30px;
+    padding: 13px 19px 13px 19px;
+}
+
+.btn:hover {
+    transform: scale(1.15);
+    background : linear-gradient(#FF79DA 100%,#9356DC 100%, #FFFFFF26 15%);
+  }
+
+  /*Body*/
+
+#body{
+    padding-top: 48px;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.body-title{
+    padding-left: 10px;
+    padding-top: 50px;
+}
+
+.body-fonctionnement{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+}
+
+.bodybody {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    top: 26px;
+    left: -11px;
+}
+
+.body-fonctionnement-numero{
+    background-color: #9356DC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 26px;
+    height: 26px;
+    border-radius: 25px 25px 25px 25px;
+}
+
+.body-fonctionnement-icone-1{
+    width: 13px;
+    height: 20px;
+    padding-top: 2px;
+}
+
+.body-fonctionnement-icone-2{
+    width: 13px;
+    height: 20px;
+    padding-top: 5px;
+}
+
+.body-fonctionnement-icone-3{
+    width: 13px;
+    height: 20px;
+    padding-top: 5px;
+    fill: #9356DC;
+}
+
+.body-fonctionnement-liste{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.p-fonctionnement-1{
+    padding: 28px 28px 28px 73px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px 10px lightgrey;
+    background-color: #f7f7f7;
+    width: 211px;
+    height: 16px;
+    position: relative;
+}
+
+.p-fonctionnement-2{
+    padding: 28px 28px 28px 73px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px 10px lightgrey;
+    background-color: #f7f7f7;
+    width: 211px;
+    height: 16px;
+    position: relative;
+}
+
+.p-fonctionnement-3{
+    padding: 28px 28px 28px 73px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px 10px lightgrey;
+    background-color: #f7f7f7;
+    width: 211px;
+    height: 16px;
+    position: relative;
+}
+
+.body-restaurant{
+    display:flex;
+    flex-direction: column;
+    background-color: #F7F7F7;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.body-restaurant-1{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.body-restaurant-image{
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+}
+
+.body-restaurant-1-description{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;
+    padding: 16px 0px 12px 13px;
+}
+
+.body-restaurant-1-name{
+    margin: 0px;
+}
+
+.body-restaurant-1-city{
+    margin: 0px;
+}
+
+.body-restaurant-1-nouveau{
+    position: absolute;
+    background-color: green;
+    top: 15px;
+    right: 15px;
+    padding: 7px 9px 6px 9px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    color: #008766;
+    background-color: #99E2D0;
+    border-radius: 5px;
+}
+
+.heart-empty{
+    position: relative;
+    width: 22px;
+    height: 21px;
+    padding: 10px 0px 0px 0px;
+    opacity: 1;
+    transition: opacity 2s;
+}
+
+.heart-full{
+    position: relative;
+    width: 22px;
+    height: 21px;
+    right: 26px;
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+.heart:hover .heart-empty{
+    opacity: 0;
+}
+
+.heart:hover .heart-full{
+    opacity: 1;
+}
+
+.body-restaurant-1:hover {
+    box-shadow: 4px 4px 2px #353535;
+}
+
+.p-fonctionnement-1:hover {
+    box-shadow: 4px 4px 2px #353535;
+}
+
+.p-fonctionnement-2:hover {
+    box-shadow: 4px 4px 2px #353535;
+}
+
+.p-fonctionnement-3:hover {
+    box-shadow: 4px 4px 2px #353535;
+}
+
+/*.heart-empty:hover{
+    transition: 500ms;
+    opacity: 0;
+}
+
+.heart-full:hover{
+    transition: 500ms;
+    opacity: 1;
+}*/
+
+
+/* Footer */
+
+footer{
+    background-color: #353535;
+}
+
+.footer-information{
+    display: flex;
+    flex-direction: column;
+}
+
+h3{
+    color: white;
+    font-family: 'Shrikhand', cursive;
+    margin: 22px 0px 16px 25px;
+}
+
+.footer-information-1{
+    margin-left: 25px;
+    margin-bottom: 22px;
+    color: white;
+}
+
+.footer-information-2{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    fill: white;
+    column-gap: 10px;
+    height: 35px;
+}
+
+.footer-information-icone{
+    fill: white;
+    width: 15px;
+}
+
+.footer-information-texte{
+    margin: 0px;
+}
+
+/* mediaquery desktop*/
+
+@media screen and (min-width: 1025px) {
+   body {
+       max-width: 100%;
+       width: 100%;
+    } 
+
+    #body {
+        padding-top: 0px;
+    }
+
+    .body{
+        padding-bottom: 20px;
+    }
+
+   .body-fonctionnement{
+       flex-direction: row;
+       justify-content: space-evenly;
+       background-color: white;
+
+   }
+
+    .body-title {
+        padding-left: 130px;
+    }
+
+    .body-restaurant-1 {
+        width: 35%;
+    }
+
+    .body-restaurant-paire-1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .footer-information {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 50px;
+        padding: 30px 50px 0px 0px;
+    }
+
+    .footer-information-1 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0px;
+        gap: 15px;
+    }
+}
+/*media query tablet*/
+
+@media screen and (min-width: 426px) and (max-width: 1024px) {
+
+    body {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .body-title{
+        padding-left: 15px;
+        padding-top: 50px;
+    }
+
+    .body-fonctionnement-liste{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 75%;
+    }
+
+    .p-fonctionnement-1{
+        padding: 28px 28px 28px 73px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        box-shadow: 0px 4px 15px 10px lightgrey;
+        background-color: #f7f7f7;
+        width: 100%;
+        height: 16px;
+        text-align: center;
+    }
+
+    .p-fonctionnement-2{
+        padding: 28px 28px 28px 73px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        box-shadow: 0px 4px 15px 10px lightgrey;
+        background-color: #f7f7f7;
+        width: 100%;
+        height: 16px;
+        text-align: center;
+    }
+
+    .p-fonctionnement-3{
+        padding: 28px 28px 28px 73px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        box-shadow: 0px 4px 15px 10px lightgrey;
+        background-color: #f7f7f7;
+        width: 100%;
+        height: 16px;
+        text-align: center;
+    }
+
+    $color_1: white;
+    $background-color_1: #9356DC;
+    
+    .body-fonctionnement-numero-1 {
+        background-color: $background-color_1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $color_1;
+        width: 26px;
+        height: 26px;
+        border-radius: 25px 25px 25px 25px;
+    }
+    .body-fonctionnement-numero-2 {
+        background-color: $background-color_1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $color_1;
+        width: 24px;
+        height: 24px;
+        border-radius: 25px 25px 25px 25px;
+    }
+    .body-fonctionnement-numero-3 {
+        background-color: $background-color_1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $color_1;
+        width: 24px;
+        height: 24px;
+        border-radius: 25px 25px 25px 25px;
+    }
+    
+    
+    /*.footer-information {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 50px;
+        padding: 30px 50px 0px 0px;
+    }
+
+    .footer-information-1 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0px;
+        gap: 15px;
+    }*/
+}
