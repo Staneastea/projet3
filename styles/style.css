@@ -316,7 +316,7 @@ h1 {
   margin-bottom: 20px;
   border-radius: 20px;
   -webkit-box-shadow: 0px 4px 15px 10px lightgrey;
-          box-shadow: 0px 4px 15px 10px lightgrey;
+  box-shadow: 0px 4px 15px 10px lightgrey;
   background-color: #f7f7f7;
   width: 211px;
   height: 16px;

@@ -132,6 +132,10 @@ h2{
 	position: relative;
 }
 
+.restaurant-menu-entree {
+    margin-bottom: 10px;
+}
+
 .restaurant-menu-entree-liste{
     display: flex;
     flex-direction: row;
